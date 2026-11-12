@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t">
+  <title id="t">MoneyGuard Malawi project cover</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17191c"/>
+      <stop offset="1" stop-color="#202329"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#8a8d99"/>
+    </linearGradient>
+    <linearGradient id="accent-2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6e7ea"/>
+      <stop offset="1" stop-color="#6f727c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#b9bcc4" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#b9bcc4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <circle cx="620" cy="150" r="260" fill="url(#glow)"/>
+
+  <g transform="translate(400 235)">
+    <path d="M0-120 100-78v92C100 84 58 142 0 166-58 142-100 84-100 14v-92Z" fill="#1d2025" stroke="url(#accent-2)" stroke-width="5"/>
+    <path d="M0-86 66-57v66C66 56 38 96 0 114-38 96-66 56-66 9v-66Z" fill="url(#accent-2)" opacity=".14"/>
+    <path d="M-38 4 8 50l46-78" fill="none" stroke="url(#accent)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g fill="none" stroke="#e6e7ea" stroke-width="3" opacity=".75">
+    <rect x="122" y="92" width="118" height="64" rx="18"/>
+    <path d="M156 156l-6 20 26-20" fill="#e6e7ea" stroke="none" opacity=".55"/>
+    <rect x="562" y="392" width="126" height="66" rx="18"/>
+    <path d="M652 458l8 20-28-20" fill="#e6e7ea" stroke="none" opacity=".55"/>
+  </g>
+  <g fill="#e6e7ea" opacity=".55">
+    <circle cx="156" cy="124" r="5"/><circle cx="181" cy="124" r="5"/><circle cx="206" cy="124" r="5"/>
+    <circle cx="598" cy="425" r="5"/><circle cx="623" cy="425" r="5"/><circle cx="648" cy="425" r="5"/>
+  </g>
+
+  <text x="60" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="6" fill="#e6e7ea">MACHINE LEARNING</text>
+  <text x="60" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="700" fill="#f5f5f5">MoneyGuard Malawi</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t">
+  <title id="t">Fulo's Brand creative project cover</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141619"/>
+      <stop offset="1" stop-color="#202329"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#8a8d99"/>
+    </linearGradient>
+    <linearGradient id="accent-2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6e7ea"/>
+      <stop offset="1" stop-color="#6f727c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#b9bcc4" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#b9bcc4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <circle cx="620" cy="150" r="270" fill="url(#glow)"/>
+
+  <g transform="translate(400 235)">
+    <path d="M-74-108h148l-20 196c-2 20-18 34-38 34h-32c-20 0-36-14-38-34Z" fill="#25282e" stroke="url(#accent-2)" stroke-width="5"/>
+    <path d="M-64-64h128l-14 140c-1 12-11 20-23 20h-54c-12 0-22-8-23-20Z" fill="url(#accent-2)" opacity=".22"/>
+    <path d="M-74-108h148" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M52-120l46-44" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="12" cy="-10" r="26" fill="url(#accent)" opacity=".9"/>
+    <circle cx="-30" cy="34" r="18" fill="url(#accent-2)"/>
+    <circle cx="26" cy="52" r="14" fill="url(#accent)" opacity=".75"/>
+    <path d="M-40 96c14 18 66 18 80 0" fill="none" stroke="url(#accent-2)" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+  </g>
+
+  <g fill="none" stroke="#e6e7ea" stroke-width="3" opacity=".4">
+    <circle cx="132" cy="128" r="34"/><circle cx="676" cy="118" r="22"/>
+    <circle cx="120" cy="448" r="18"/><circle cx="682" cy="438" r="30"/>
+  </g>
+
+  <text x="60" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="6" fill="#e6e7ea">BRAND IDENTITY</text>
+  <text x="60" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="700" fill="#f5f5f5">Fulo's Brand</text>
+</svg>

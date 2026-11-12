@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t">
+  <title id="t">Makoi Global Electronics project cover</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17191c"/>
+      <stop offset="1" stop-color="#202329"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#8a8d99"/>
+    </linearGradient>
+    <linearGradient id="accent-2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6e7ea"/>
+      <stop offset="1" stop-color="#6f727c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#b9bcc4" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#b9bcc4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <circle cx="640" cy="140" r="270" fill="url(#glow)"/>
+
+  <g transform="translate(400 240)">
+    <rect x="-92" y="-92" width="184" height="184" rx="24" fill="#1d2025" stroke="url(#accent-2)" stroke-width="5"/>
+    <rect x="-46" y="-46" width="92" height="92" rx="12" fill="url(#accent-2)" opacity=".2"/>
+    <path d="M-46-18h-46M-46 0h-46M-46 18h-46M46-18h46M46 0h46M46 18h46M-18-46v-46M0-46v-46M18-46v-46M-18 46v46M0 46v46M18 46v46" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+    <rect x="-22" y="-22" width="44" height="44" rx="8" fill="url(#accent)"/>
+  </g>
+
+  <g fill="#e6e7ea" opacity=".8">
+    <circle cx="132" cy="112" r="7"/><circle cx="672" cy="120" r="7"/>
+    <circle cx="126" cy="440" r="7"/><circle cx="666" cy="452" r="7"/>
+  </g>
+  <g stroke="#e6e7ea" stroke-width="3" opacity=".4" fill="none">
+    <path d="M132 112h70v40M672 120h-70v40M126 440h70v-40M666 452h-70v-40"/>
+  </g>
+
+  <text x="60" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="6" fill="#e6e7ea">E-COMMERCE</text>
+  <text x="60" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="700" fill="#f5f5f5">Makoi Global Electronics</text>
+</svg>

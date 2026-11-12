@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Software projects and creative work by Emmanuel Noel Kakwera — MoneyGuard Malawi, McCOY electronics, Machili Agricultural Innovations, a club voting system, Fulo's Blend, graphic design and DJ/media production.">
+  <meta name="author" content="Emmanuel Noel Kakwera">
+  <meta name="theme-color" content="#17191c">
+
+  <title>Projects &amp; Creative Work — Emmanuel Noel Kakwera</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+  <!--
+    - #HEADER
+  -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo" aria-label="Emmanuel Kakwera — home">
+        <span class="logo-mark">EK</span>
+        <span class="logo-text">
+          Emmanuel
+          <small>Kakwera</small>
+        </span>
+      </a>
+
+      <nav class="navbar" data-navbar aria-label="Primary navigation">
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="projects.html" class="navbar-link active" aria-current="page">Projects</a></li>
+          <li><a href="#creative" class="navbar-link">Creative</a></li>
+          <li><a href="animations.html" class="navbar-link">Animations</a></li>
+          <li><a href="about.html#contact" class="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="about.html#contact" class="btn btn-ghost header-cta">
+        Let's talk
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu"
+        aria-expanded="false">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!--
+      - #PAGE HERO
+    -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <span class="orb orb-1"></span>
+      <div class="container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+          <span>Projects</span>
+        </nav>
+
+        <h1 class="page-title" id="page-title">
+          Things I have <span class="accent">built</span>
+        </h1>
+
+        <p>
+          Software projects that solve real problems, plus a creative portfolio covering
+          branding, graphic design, DJing, photography and video production.
+        </p>
+
+      </div>
+    </section>
+
+    <!--
+      - #SOFTWARE PROJECTS
+    -->
+    <section class="section" id="software" aria-labelledby="projects-label">
+      <div class="container">
+
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Software &amp; development</p>
+            <h2 class="section-title" id="projects-label">Technical <span class="accent">projects</span></h2>
+          </div>
+          <p>
+            Each project below states the problem it addresses, the technologies used and,
+            where available, a link to its repository or public GitHub profile.
+          </p>
+        </div>
+
+        <div class="project-grid">
+
+          <!-- MoneyGuard -->
+          <article class="project-card card" id="moneyguard" data-reveal>
+            <div class="project-media">
+              <a href="https://github.com/emmanuelkakwera/mobile-money-sms-fraud-detection" target="_blank" rel="noopener"
+                aria-label="Open the MoneyGuard Malawi repository on GitHub">
+                <img src="./assets/images/covers/moneyguard.svg" width="800" height="600"
+                  alt="MoneyGuard Malawi — mobile money SMS fraud detection project">
+              </a>
+              <span class="project-number">PROJECT 01</span>
+            </div>
+
+            <div class="project-body">
+              <h3>MoneyGuard Malawi</h3>
+
+              <p>
+                A machine-learning web application that detects SMS phishing and fraud
+                targeting mobile money users in Malawi, helping people identify suspicious
+                messages before they lose money.
+              </p>
+
+              <div class="problem">
+                <strong>The problem</strong>
+                Mobile money users receive fraudulent SMS messages designed to steal PINs and
+                cash. Many people cannot easily tell a scam message from a genuine one.
+              </div>
+
+              <p class="tech-label">Technologies used</p>
+              <div class="tag-list">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Text Classification</span>
+                <span class="tag">HTML/CSS/JS</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/emmanuelkakwera/mobile-money-sms-fraud-detection" class="btn btn-ghost"
+                  target="_blank" rel="noopener">
+                  <ion-icon name="logo-github"></ion-icon>
+                  GitHub repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- McCOY -->
+          <article class="project-card card" id="makoi" data-reveal style="--delay: 0.08s;">
+            <div class="project-media">
+              <a href="https://globe-electronics.onrender.com/" target="_blank" rel="noopener"
+                aria-label="Visit the McCOY live website">
+                <img src="./assets/images/covers/mccoy-project.png" width="1418" height="768"
+                  alt="McCOY air conditioners displayed on the Globe Electronics website">
+              </a>
+              <span class="project-number">PROJECT 02</span>
+            </div>
+
+            <div class="project-body">
+              <h3>McCOY</h3>
+
+              <p>
+                An electronics shop website with product management functionality, built to give
+                a local retailer a professional online catalogue and a simpler way to manage
+                products.
+              </p>
+
+              <div class="problem">
+                <strong>The problem</strong>
+                Small electronics shops often depend on physical walk-ins and manual stock
+                records, which limits their reach and makes product updates slow.
+              </div>
+
+              <p class="tech-label">Technologies used</p>
+              <div class="tag-list">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Flask</span>
+                <span class="tag">SQL</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://globe-electronics.onrender.com/" class="btn btn-ghost" target="_blank" rel="noopener">
+                  <ion-icon name="open-outline"></ion-icon>
+                  Visit live site
+                </a>
+                <a href="https://github.com/emmanuelkakwera/McCoyairconditioner" class="btn btn-ghost"
+                  target="_blank" rel="noopener">
+                  <ion-icon name="logo-github"></ion-icon>
+                  GitHub repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Machili -->
+          <article class="project-card card" id="machiri" data-reveal>
+            <div class="project-media">
+              <img src="./assets/images/covers/machili-brand/page_1.png" width="800" height="600"
+                alt="Machili Agricultural Innovations branding and agri-tech concept">
+              <span class="project-number">PROJECT 03</span>
+            </div>
+
+            <div class="project-body">
+              <h3>Machili Agricultural Innovations</h3>
+
+              <p>
+                Corporate branding and the <strong>Ulimi Mmanja</strong> digital agriculture
+                concept — a visual identity and digital idea designed to connect smallholder
+                farmers with useful agricultural information.
+              </p>
+
+              <div class="problem">
+                <strong>The problem</strong>
+                Smallholder farmers need clearer access to agricultural information and markets,
+                while the company needed a credible identity to attract partners and customers.
+              </div>
+
+              <p class="tech-label">Technologies &amp; methods</p>
+              <div class="tag-list">
+                <span class="tag">Brand Identity</span>
+                <span class="tag">Adobe Photoshop</span>
+                <span class="tag">Digital Agriculture</span>
+                <span class="tag">HTML/CSS Concept</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/emmanuelkakwera/ULIMI_MMANJA" class="btn btn-ghost" target="_blank" rel="noopener">
+                  <ion-icon name="logo-github"></ion-icon>
+                  GitHub repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Voting system -->
+          <article class="project-card card" id="voting" data-reveal style="--delay: 0.08s;">
+            <div class="project-media">
+              <img src="./assets/images/covers/voting.svg" width="800" height="600"
+                alt="Computer and Engineering Club voting system project">
+              <span class="project-number">PROJECT 04</span>
+            </div>
+
+            <div class="project-body">
+              <h3>Club Voting System</h3>
+
+              <p>
+                A digital voting system developed as an academic group project for the
+                Computer and Engineering Club, replacing manual ballot counting with a faster
+                and more transparent process.
+              </p>
+
+              <div class="problem">
+                <strong>The problem</strong>
+                Manual club elections are slow and prone to counting errors and disputes.
+                The system gives members a simple way to cast votes and produces clear results.
+              </div>
+
+              <p class="tech-label">Technologies used</p>
+              <div class="tag-list">
+                <span class="tag">Java</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Database Design</span>
+                <span class="tag">UI Design</span>
+              </div>
+
+              <div class="project-links">
+                <!-- TODO: replace with the exact voting system repository URL once it is published -->
+                <a href="https://github.com/emmanuelkakwera" class="btn btn-ghost" target="_blank" rel="noopener">
+                  <ion-icon name="logo-github"></ion-icon>
+                  GitHub profile
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="repo-banner" data-reveal>
+          <div>
+            <span class="repo-name">
+              <ion-icon name="logo-github"></ion-icon>
+              github.com/emmanuelkakwera
+            </span>
+            <p>
+              Explore everything I have published so far. Some project repositories are still
+              being prepared and will appear here as they go live.
+            </p>
+          </div>
+
+          <a href="https://github.com/emmanuelkakwera" class="btn btn-outline" target="_blank" rel="noopener">
+            Visit my GitHub profile
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!--
+      - #CREATIVE PORTFOLIO
+    -->
+    <section class="section" id="creative" aria-labelledby="creative-label" style="padding-top: 0;">
+      <div class="container">
+
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Creative portfolio</p>
+            <h2 class="section-title" id="creative-label">Design, brands &amp; <span class="accent">media</span></h2>
+          </div>
+          <p>
+            The creative side of my practice: brand identity, graphic design, DJing,
+            photography and video production.
+          </p>
+        </div>
+
+        <div class="creative-grid">
+
+          <!-- Fulo's Blend -->
+          <article class="creative-card wide featured" id="fulo" data-reveal>
+            <a href="https://fulosblend.vercel.app/" target="_blank" rel="noopener"
+              aria-label="Visit the Fulo's Blend live site">
+              <img src="./assets/images/covers/fulos-blend-project.png" width="1492" height="768"
+                alt="Fulo's Blend website showing its smoothie menu and landing page">
+            </a>
+            <div class="creative-body">
+              <span class="kicker">Brand Identity &middot; Smoothie Brand</span>
+              <h3>Fulo's Blend</h3>
+              <p>
+                A smoothie brand concept built from the ground up — logo direction, colour
+                palette, packaging and promotional visuals designed to feel fresh, youthful
+                and memorable. The project covers the full visual identity and its presentation.
+              </p>
+              <div class="tag-list creative-tags">
+                <span class="tag">Logo Design</span>
+                <span class="tag">Packaging</span>
+                <span class="tag">Colour System</span>
+                <span class="tag">Social Media Visuals</span>
+              </div>
+              <div class="creative-links">
+                <a href="https://fulosblend.vercel.app/" class="btn btn-ghost" target="_blank" rel="noopener">
+                  <ion-icon name="open-outline"></ion-icon>
+                  Visit live site
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Machili branding -->
+          <article class="creative-card featured" id="machiri-brand" data-reveal>
+            <img src="./assets/images/covers/machili-brand/page_1.png" width="1200" height="800"
+              alt="Machili Agricultural Innovations corporate branding package cover">
+            <div class="creative-body">
+              <span class="kicker">Corporate Branding</span>
+              <h3>Machili Agricultural Innovations</h3>
+              <p>
+                Corporate identity work for an agricultural innovations company, including logo
+                direction, company profile and the Ulimi Mmanja digital agriculture concept.
+              </p>
+              <div class="tag-list creative-tags">
+                <span class="tag">Corporate Identity</span>
+                <span class="tag">Company Profile</span>
+                <span class="tag">Concept Design</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Graphic design -->
+          <article class="creative-card" id="graphic-design" data-reveal style="--delay: 0.08s;">
+            <img src="./assets/images/covers/graphic-design.svg" width="800" height="600"
+              alt="Graphic design and advertising work">
+            <div class="creative-body">
+              <span class="kicker">Graphic Design &middot; Advertising</span>
+              <h3>Brand &amp; Print Design</h3>
+              <p>
+                A collection of branding and advertising work: posters, vehicle branding,
+                business cards, company profiles, T-shirts, caps and billboard designs.
+              </p>
+              <div class="tag-list creative-tags">
+                <span class="tag">Posters</span>
+                <span class="tag">Vehicle Branding</span>
+                <span class="tag">Business Cards</span>
+                <span class="tag">Billboards</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- DJ & media -->
+          <article class="creative-card wide" id="dj-media" data-reveal>
+            <img src="./assets/images/covers/dj-media.svg" width="800" height="600"
+              alt="DJ performance, photography and videography work">
+            <div class="creative-body">
+              <span class="kicker">DJ &middot; Photography &middot; Video</span>
+              <h3>DJ &amp; Media Production</h3>
+              <p>
+                Music mixing with VirtualDJ — beatmatching and scratch techniques — alongside
+                photography and videography for events and creative projects. This is where I
+                build atmosphere and tell stories through sound and picture.
+              </p>
+              <div class="tag-list creative-tags">
+                <span class="tag">VirtualDJ</span>
+                <span class="tag">Music Mixing</span>
+                <span class="tag">Photography</span>
+                <span class="tag">Videography</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="cta-band" data-reveal style="margin-top: 40px;">
+          <div>
+            <p class="eyebrow">Creative collaborations</p>
+            <h2>Need a brand, a poster or a visual story?</h2>
+            <p>
+              I take on branding, graphic design, photography and video projects alongside
+              software development.
+            </p>
+          </div>
+
+          <a href="about.html#contact" class="btn">
+            Work with me
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--
+    - #FOOTER
+  -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Emmanuel Kakwera — home">
+            <span class="logo-mark">EK</span>
+            <span class="logo-text">
+              Emmanuel
+              <small>Kakwera</small>
+            </span>
+          </a>
+
+          <p>
+            Computer Scientist, Software Developer, Machine Learning Enthusiast,
+            Graphic Designer, DJ and Photographer &amp; Videographer based in
+            Blantyre, Malawi.
+          </p>
+
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/emmanuelkakwera" class="social-link" target="_blank" rel="noopener"
+                aria-label="GitHub profile">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:emmanuelkakwera4@gmail.com" class="social-link" aria-label="Send an email">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/emmanuelkakwera/emmanuel-s_kakwera_pfolio" class="social-link" target="_blank"
+                rel="noopener" aria-label="Portfolio source repository">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="projects.html#creative">Creative Portfolio</a></li>
+            <li><a href="animations.html">Animated Concepts</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-title">Get in touch</p>
+          <ul class="footer-links">
+            <li><a href="mailto:emmanuelkakwera4@gmail.com">emmanuelkakwera4@gmail.com</a></li>
+            <li><a href="tel:098220439">098220439</a></li>
+            <li><a href="https://github.com/emmanuelkakwera" target="_blank" rel="noopener">github.com/emmanuelkakwera</a></li>
+            <li><span>Blantyre, Malawi</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> Emmanuel Noel Kakwera. All rights reserved.</p>
+
+        <a href="#" class="back-to-top">
+          Back to top
+          <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
+      </div>
+      <div class="footer-wordmark" aria-hidden="true">Kakwera</div>
+
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

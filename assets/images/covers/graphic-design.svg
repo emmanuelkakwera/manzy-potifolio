@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t">
+  <title id="t">Graphic design and branding cover</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141619"/>
+      <stop offset="1" stop-color="#202329"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#8a8d99"/>
+    </linearGradient>
+    <linearGradient id="accent-2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6e7ea"/>
+      <stop offset="1" stop-color="#6f727c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#b9bcc4" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#b9bcc4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <circle cx="620" cy="150" r="270" fill="url(#glow)"/>
+
+  <g transform="translate(400 238)">
+    <rect x="-132" y="-96" width="150" height="192" rx="14" fill="#25282e" stroke="url(#accent-2)" stroke-width="4" transform="rotate(-8)"/>
+    <rect x="-18" y="-110" width="150" height="192" rx="14" fill="#25282e" stroke="url(#accent)" stroke-width="4" transform="rotate(7)"/>
+    <path d="M-40-52h94M-40-22h70M-40 8h94M-40 38h54" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" opacity=".65"/>
+    <circle cx="96" cy="-96" r="42" fill="url(#accent)" opacity=".9"/>
+    <path d="M96-118v44M74-96h44" stroke="#25282e" stroke-width="7" stroke-linecap="round"/>
+    <path d="M-132 96l40 40 46-46" fill="none" stroke="url(#accent-2)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
+  </g>
+
+  <g fill="none" stroke="#e6e7ea" stroke-width="3" opacity=".35">
+    <circle cx="124" cy="126" r="26"/><rect x="646" y="398" width="52" height="52" rx="8" transform="rotate(14 672 424)"/>
+  </g>
+
+  <text x="60" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="6" fill="#e6e7ea">VISUAL IDENTITY</text>
+  <text x="60" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700" fill="#f5f5f5">Graphic Design</text>
+</svg>

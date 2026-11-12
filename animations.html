@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Animated concepts demonstrated by Emmanuel Noel Kakwera — typing text, animated backgrounds, hover effects, animated skill indicators and scroll reveal animations.">
+  <meta name="author" content="Emmanuel Noel Kakwera">
+  <meta name="theme-color" content="#17191c">
+
+  <title>Animated Concepts — Emmanuel Noel Kakwera</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+  <!--
+    - #HEADER
+  -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo" aria-label="Emmanuel Kakwera — home">
+        <span class="logo-mark">EK</span>
+        <span class="logo-text">
+          Emmanuel
+          <small>Kakwera</small>
+        </span>
+      </a>
+
+      <nav class="navbar" data-navbar aria-label="Primary navigation">
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="projects.html" class="navbar-link">Projects</a></li>
+          <li><a href="projects.html#creative" class="navbar-link">Creative</a></li>
+          <li><a href="animations.html" class="navbar-link active" aria-current="page">Animations</a></li>
+          <li><a href="about.html#contact" class="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="about.html#contact" class="btn btn-ghost header-cta">
+        Let's talk
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu"
+        aria-expanded="false">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!--
+      - #PAGE HERO
+    -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <span class="orb orb-1"></span>
+      <div class="container">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+          <span>Animated Concepts</span>
+        </nav>
+
+        <h1 class="page-title" id="page-title">
+          Motion with a <span class="accent">purpose</span>
+        </h1>
+
+        <p>
+          Six distinct animation techniques used across this website. Each example is live
+          on this page and is implemented with plain HTML, CSS and JavaScript.
+        </p>
+
+      </div>
+    </section>
+
+    <!--
+      - #CONCEPTS
+    -->
+    <section class="section" aria-labelledby="concepts-label">
+      <div class="container">
+
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Live demonstrations</p>
+            <h2 class="section-title" id="concepts-label">Animated <span class="accent">concepts</span></h2>
+          </div>
+          <p>
+            Hover, scroll and watch. The animations are subtle on purpose — they should support
+            the content, not distract from it.
+          </p>
+        </div>
+
+        <div class="concept-grid">
+
+          <!-- 1. Typing -->
+          <article class="concept-card card" data-reveal>
+            <div class="concept-head">
+              <h3>Animated text</h3>
+              <span class="concept-index">01</span>
+            </div>
+
+            <p>
+              A typing effect cycles through my professional descriptions. JavaScript types and
+              deletes each phrase, while CSS blinks the cursor.
+            </p>
+
+            <div class="demo-surface">
+              <div>
+                <div class="demo-typing">
+                  <span class="typed"
+                    data-typing="Future Software Engineer|Web Developer|Computer Science Student|Technology Enthusiast|Creative Designer"></span><span
+                    class="cursor" aria-hidden="true"></span>
+                </div>
+                <p class="sub">Typing effect &middot; JavaScript + CSS</p>
+              </div>
+            </div>
+
+            <code class="code-note">data-typing="Future Software Engineer|Web Developer|..."</code>
+          </article>
+
+          <!-- 2. Animated background -->
+          <article class="concept-card card" data-reveal style="--delay: 0.08s;">
+            <div class="concept-head">
+              <h3>Animated background</h3>
+              <span class="concept-index">02</span>
+            </div>
+
+            <p>
+              Soft geometric shapes drift slowly behind the content. The movement is created with
+              CSS <strong>@keyframes</strong> and a long, alternating duration.
+            </p>
+
+            <div class="demo-surface demo-bg">
+              <span class="shape shape-1"></span>
+              <span class="shape shape-2"></span>
+              <span class="shape shape-3"></span>
+              <p class="demo-label">Floating shapes</p>
+            </div>
+
+            <code class="code-note">@keyframes drift { transform: translate3d(...) scale(...); }</code>
+          </article>
+
+          <!-- 3. Hover effects -->
+          <article class="concept-card card" data-reveal>
+            <div class="concept-head">
+              <h3>Hover effects</h3>
+              <span class="concept-index">03</span>
+            </div>
+
+            <p>
+              Cards lift, glow and scale when the pointer moves over them. CSS
+              <strong>transitions</strong> make the change smooth rather than sudden.
+            </p>
+
+            <div class="demo-surface">
+              <div class="hover-demo">
+                <div class="hover-demo-card">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                  Code
+                </div>
+                <div class="hover-demo-card">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                  Design
+                </div>
+                <div class="hover-demo-card">
+                  <ion-icon name="musical-notes-outline"></ion-icon>
+                  Media
+                </div>
+              </div>
+            </div>
+
+            <code class="code-note">.card:hover { transform: translateY(-8px) scale(1.04); }</code>
+          </article>
+
+          <!-- 4. Skill indicators -->
+          <article class="concept-card card" data-reveal style="--delay: 0.08s;">
+            <div class="concept-head">
+              <h3>Animated skill indicators</h3>
+              <span class="concept-index">04</span>
+            </div>
+
+            <p>
+              Progress bars fill only when they scroll into view. An
+              <strong>IntersectionObserver</strong> triggers the width transition at the right moment.
+            </p>
+
+            <div class="demo-surface">
+              <div class="progress-list" style="width: 100%; max-width: 420px; text-align: left;">
+
+                <div class="progress-item">
+                  <div class="progress-meta">
+                    <span>HTML, CSS &amp; JavaScript</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="bar"><span data-progress="90"></span></div>
+                </div>
+
+                <div class="progress-item">
+                  <div class="progress-meta">
+                    <span>Python</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="bar"><span data-progress="85"></span></div>
+                </div>
+
+                <div class="progress-item">
+                  <div class="progress-meta">
+                    <span>Graphic Design</span>
+                    <span>88%</span>
+                  </div>
+                  <div class="bar"><span data-progress="88"></span></div>
+                </div>
+
+              </div>
+            </div>
+
+            <code class="code-note">bar.style.width = bar.dataset.progress + "%";</code>
+          </article>
+
+          <!-- 5. Scroll reveal -->
+          <article class="concept-card card" data-reveal>
+            <div class="concept-head">
+              <h3>Scrolling animations</h3>
+              <span class="concept-index">05</span>
+            </div>
+
+            <p>
+              Content fades and slides into place as you scroll. Each tile below has its own
+              delay, creating a gentle staggered effect.
+            </p>
+
+            <div class="demo-surface">
+              <div class="reveal-demo">
+                <div class="reveal-tile" data-reveal>01 &middot; Reveal</div>
+                <div class="reveal-tile" data-reveal style="--delay: 0.1s;">02 &middot; Fade</div>
+                <div class="reveal-tile" data-reveal style="--delay: 0.2s;">03 &middot; Slide</div>
+                <div class="reveal-tile" data-reveal style="--delay: 0.3s;">04 &middot; Stagger</div>
+              </div>
+            </div>
+
+            <code class="code-note">new IntersectionObserver(entries => ...).observe(element)</code>
+          </article>
+
+          <!-- 6. Button shine -->
+          <article class="concept-card card" data-reveal style="--delay: 0.08s;">
+            <div class="concept-head">
+              <h3>Button interaction</h3>
+              <span class="concept-index">06</span>
+            </div>
+
+            <p>
+              Primary buttons use a circular outline that slides from one side to the other on
+              hover. The effect is built entirely with a CSS pseudo-element and a transition.
+            </p>
+
+            <div class="demo-surface">
+              <a href="projects.html" class="btn">
+                View My Projects
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
+            </div>
+
+            <code class="code-note">.btn::before { left: calc(100% - 64px); }</code>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--
+      - #UNDER THE HOOD
+    -->
+    <section class="section" aria-labelledby="hood-label" style="padding-top: 0;">
+      <div class="container">
+
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Under the hood</p>
+            <h2 class="section-title" id="hood-label">How it is <span class="accent">implemented</span></h2>
+          </div>
+          <p>
+            Everything here uses concepts from the HTML, CSS and JavaScript course — no
+            animation libraries.
+          </p>
+        </div>
+
+        <div class="skill-groups" data-reveal>
+
+          <div class="skill-group">
+            <h4>HTML</h4>
+            <ul>
+              <li class="tag">Semantic sections</li>
+              <li class="tag">data-* attributes</li>
+              <li class="tag">Accessible labels</li>
+              <li class="tag">Internal &amp; external links</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h4>CSS</h4>
+            <ul>
+              <li class="tag">@keyframes</li>
+              <li class="tag">Transitions</li>
+              <li class="tag">Transforms</li>
+              <li class="tag">Custom properties</li>
+              <li class="tag">Media queries</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h4>JavaScript</h4>
+            <ul>
+              <li class="tag">DOM selection</li>
+              <li class="tag">Event listeners</li>
+              <li class="tag">setTimeout loops</li>
+              <li class="tag">IntersectionObserver</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h4>Accessibility</h4>
+            <ul>
+              <li class="tag">prefers-reduced-motion</li>
+              <li class="tag">Keyboard navigation</li>
+              <li class="tag">Focus indicators</li>
+              <li class="tag">Descriptive alt text</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="cta-band" data-reveal style="margin-top: 40px;">
+          <div>
+            <p class="eyebrow">See the real thing</p>
+            <h2>The same motion runs across the whole site.</h2>
+            <p>
+              Explore the projects, read my background, or get in touch to start a conversation.
+            </p>
+          </div>
+
+          <a href="projects.html" class="btn">
+            Explore my work
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--
+    - #FOOTER
+  -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Emmanuel Kakwera — home">
+            <span class="logo-mark">EK</span>
+            <span class="logo-text">
+              Emmanuel
+              <small>Kakwera</small>
+            </span>
+          </a>
+
+          <p>
+            Computer Scientist, Software Developer, Machine Learning Enthusiast,
+            Graphic Designer, DJ and Photographer &amp; Videographer based in
+            Blantyre, Malawi.
+          </p>
+
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/emmanuelkakwera" class="social-link" target="_blank" rel="noopener"
+                aria-label="GitHub profile">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:emmanuelkakwera4@gmail.com" class="social-link" aria-label="Send an email">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/emmanuelkakwera/emmanuel-s_kakwera_pfolio" class="social-link" target="_blank"
+                rel="noopener" aria-label="Portfolio source repository">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="projects.html#creative">Creative Portfolio</a></li>
+            <li><a href="animations.html">Animated Concepts</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-title">Get in touch</p>
+          <ul class="footer-links">
+            <li><a href="mailto:emmanuelkakwera4@gmail.com">emmanuelkakwera4@gmail.com</a></li>
+            <li><a href="tel:098220439">098220439</a></li>
+            <li><a href="https://github.com/emmanuelkakwera" target="_blank" rel="noopener">github.com/emmanuelkakwera</a></li>
+            <li><span>Blantyre, Malawi</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> Emmanuel Noel Kakwera. All rights reserved.</p>
+
+        <a href="#" class="back-to-top">
+          Back to top
+          <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
+      </div>
+      <div class="footer-wordmark" aria-hidden="true">Kakwera</div>
+
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
