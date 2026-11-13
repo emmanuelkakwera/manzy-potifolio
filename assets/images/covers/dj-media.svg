@@ -1,45 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t">
   <title id="t">DJ and media production cover</title>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#17191c"/>
-      <stop offset="1" stop-color="#202329"/>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101214" stop-opacity=".48"/>
+      <stop offset=".58" stop-color="#101214" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#101214" stop-opacity=".82"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f2f2f2"/>
-      <stop offset="1" stop-color="#8a8d99"/>
-    </linearGradient>
-    <linearGradient id="accent-2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#e6e7ea"/>
-      <stop offset="1" stop-color="#6f727c"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#b9bcc4" stop-opacity=".4"/>
-      <stop offset="1" stop-color="#b9bcc4" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".045" stroke-width="1"/>
-    </pattern>
   </defs>
 
-  <rect width="800" height="600" fill="url(#bg)"/>
-  <rect width="800" height="600" fill="url(#grid)"/>
-  <circle cx="620" cy="150" r="270" fill="url(#glow)"/>
-
-  <g transform="translate(400 238)">
-    <circle cx="-58" cy="0" r="92" fill="#1d2025" stroke="url(#accent-2)" stroke-width="5"/>
-    <circle cx="-58" cy="0" r="20" fill="url(#accent)"/>
-    <circle cx="-58" cy="0" r="44" fill="none" stroke="url(#accent-2)" stroke-width="2" opacity=".5"/>
-    <circle cx="96" cy="0" r="92" fill="#1d2025" stroke="url(#accent)" stroke-width="5"/>
-    <circle cx="96" cy="0" r="20" fill="url(#accent-2)"/>
-    <circle cx="96" cy="0" r="44" fill="none" stroke="url(#accent)" stroke-width="2" opacity=".5"/>
-    <path d="M-58-92v-26M-58 92v26M96-92v-26M96 92v26" stroke="url(#accent-2)" stroke-width="5" stroke-linecap="round"/>
-    <path d="M-160 0h-52M208 0h52" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" opacity=".55"/>
-  </g>
-
-  <g stroke="url(#accent)" stroke-width="5" stroke-linecap="round" opacity=".8">
-    <path d="M96 470v-24M126 470v-52M156 470v-36M186 470v-70M216 470v-30M246 470v-58M276 470v-40M306 470v-64M336 470v-26M366 470v-48M396 470v-34M426 470v-72M456 470v-28M486 470v-56M516 470v-38M546 470v-66M576 470v-24M606 470v-50M636 470v-34M666 470v-60M696 470v-22"/>
-  </g>
+  <image href="dj-screenshot.png" x="0" y="0" width="800" height="600"
+    preserveAspectRatio="xMidYMid slice" opacity=".68"/>
+  <rect width="800" height="600" fill="url(#shade)"/>
 
   <text x="60" y="520" font-family="Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="6" fill="#e6e7ea">DJ · PHOTOGRAPHY · VIDEO</text>
   <text x="60" y="564" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#f5f5f5">Creative Media</text>
