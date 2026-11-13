@@ -109,35 +109,6 @@ Using VS Code, you can also install the **Live Server** extension and choose *Op
 
 ---
 
-## Publish with GitHub Pages
-
-1. Create a repository named `personal-portfolio` (or use the existing repository).
-2. Upload `index.html`, `about.html`, `projects.html`, `animations.html` and the `assets/` folder.
-3. In the repository, open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and the `/ (root)` folder, then save.
-6. Wait for GitHub to publish the site and open the generated URL.
-
-Expected URL format:
-
-```text
-https://<username>.github.io/<repository-name>/
-```
-
----
-
-## Personalisation checklist
-
-Before submitting, replace the remaining placeholders:
-
-- [ ] **Secondary school name** in `about.html` — the education table currently lists MANEB as the awarding body for the MSCE. Replace it with the specific secondary school if you want the school named.
-- [ ] **Project screenshots** — replace the remaining SVG covers in `assets/images/covers/` with real screenshots.
-- [ ] **Project repository links** — McCOY and MoneyGuard have public repositories; update the Machili Agricultural Innovations and voting-system buttons with their exact repository URLs once published.
-- [ ] **Profile photo** — `assets/images/profile.jpg` is the current portrait; replace it with a higher-resolution photo if available.
-- [ ] **Social links** — add LinkedIn, Instagram or other professional profiles to the footer if desired.
-- [ ] **GitHub Pages URL** — add the published link to the README and repository description.
-
----
 
 ## Credits
 
