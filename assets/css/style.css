@@ -1869,6 +1869,11 @@ hr {
   transform: scale(0.96);
 }
 
+#dj-media:hover img,
+#dj-media:focus-within img {
+  opacity: 0.2;
+}
+
 .creative-card.featured:hover img,
 .creative-card.featured:focus-within img {
   transform: scale(1.02);
